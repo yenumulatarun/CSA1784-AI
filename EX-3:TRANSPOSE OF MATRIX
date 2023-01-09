@@ -13,3 +13,4 @@ for r in range(rows):
 print("Transpose matrix is: ")
 for r in result:
     print(r)
+    
