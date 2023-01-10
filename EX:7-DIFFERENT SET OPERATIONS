@@ -1,0 +1,11 @@
+S = {1, 2, 4, 6, 8};
+N = {1, 2, 3, 7, 5};
+ 
+
+print("Union of S and N is",S | N)
+
+print("Intersection of S and N is",S & N)
+
+print("Difference of S and N is",S - N)
+ 
+print("Symmetric difference of S and N is",S ^ N)
