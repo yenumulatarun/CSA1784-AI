@@ -1,0 +1,21 @@
+if j not in indeks:
+      if degree[j] > _max:
+        _max = degree[j]
+        idx = j
+  indeks.append(idx)
+  sortedNode.append(node[idx])
+
+# The main process
+theSolution={}
+for n in sortedNode:
+  setTheColor = colorDict[n]
+  theSolution[n] = setTheColor[0]
+  adjacentNode = G[t_[n]]
+  for j in range(len(adjacentNode)):
+    if adjacentNode[j]==1 and (setTheColor[0] in colorDict[node[j]]):
+      colorDict[node[j]].remove(setTheColor[0])
+
+
+# Print the solution
+for t,w in sorted(theSolution.items()):
+  print("Node",t," = ",w)
